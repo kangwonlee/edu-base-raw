@@ -9,7 +9,7 @@ LABEL maintainer="kangwon@gmail.com" \
     org.opencontainers.image.source="https://github.com/kangwonlee/edu-base" \
     org.opencontainers.image.title="edu-base" 
 
-RUN useradd -m runner
+RUN useradd -u 1001 -m runner
 
 # Switch to the non-root user
 USER runner
