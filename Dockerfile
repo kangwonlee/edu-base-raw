@@ -14,6 +14,8 @@ RUN useradd -m educator
 # Switch to the non-root user
 USER educator
 
+WORKDIR /app
+
 COPY requirements.txt /requirements.txt
 
 RUN python3 -m pip install --upgrade pip
