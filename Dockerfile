@@ -23,5 +23,14 @@ WORKDIR /app
 
 COPY requirements.txt /requirements.txt
 
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --no-cache-dir --requirement /requirements.txt
+RUN git clone --depth=1 --branch v0.1.9 https://github.com/kangwonlee/gemini-python-tutor /app/temp/
+
+RUN python3 -m pip install --upgrade pip &&\
+    python3 -m pip install --no-cache-dir --user --requirement /requirements.txt &&\
+    python3 -m pip install --no-cache-dir --user --requirement /app/temp/requirements.txt &&\
+    mkdir -p /app/ai_tutor/ &&\
+    mv /app/temp/*.py /app/ai_tutor || true &&\
+    mv /app/temp/locale/ /app/ai_tutor/locale/ &&\
+    rm -rf /app/temp
+
+CMD ["python3", "-m", "pytest", "--version"]

@@ -4,10 +4,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - 2025-02-20
+## [Unreleased] - YYYY-MM-DD
 
 ### Added
 
+
+### Changed
+
+
+### Deprecated
+
+
+### Removed
+
+
+### Fixed
+
+
+### Security
+
+
+## [v0.2.0] - 2025-02-22
+
+### Added
+
+* `ai-tutor.py` and `entrypoint.py` files to enable pulling only one image (`gemini-python-tutor`:`v0.1.9`)
+* `pytest` line at the end of the `Dockerfile` to check the version of `pytest`
 
 ### Changed
 
@@ -23,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 * Dockerfile Label
+* add `git` for new commit tests
 
 ### Security
 
