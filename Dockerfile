@@ -4,7 +4,7 @@
 FROM python:3.11.11-slim
 
 LABEL maintainer="kangwon@gmail.com" \
-    org.opencontainers.image.description="A Docker image with Python, pytest, and scipy modules" \
+    org.opencontainers.image.description="A Docker image with Python and pytest" \
     org.opencontainers.image.authors="Kangwon Lee, kangwon@gmail.com, https://github.com/kangwonlee" \
     org.opencontainers.image.source="https://github.com/kangwonlee/edu-base" \
     org.opencontainers.image.title="edu-base" 
