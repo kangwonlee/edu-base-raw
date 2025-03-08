@@ -20,7 +20,7 @@ WORKDIR /app
 
 COPY requirements.txt /requirements.txt
 
-RUN git clone --depth=1 --branch v0.1.9 https://github.com/kangwonlee/gemini-python-tutor /app/temp/
+RUN git clone --depth=1 --branch v0.2.1 https://github.com/kangwonlee/gemini-python-tutor /app/temp/
 
 RUN python3 -m pip install --upgrade pip &&\
     python3 -m pip install --no-cache-dir --user --requirement /requirements.txt &&\
