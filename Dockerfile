@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY requirements.txt /requirements.txt
 
-RUN uv pip install --no-cache-dir --user --requirement /requirements.txt &&\
+RUN uv pip install --no-cache-dir --system --requirement /requirements.txt &&\
     python3 -c "import pytest"
 
 
