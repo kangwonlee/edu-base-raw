@@ -1,2 +1,2 @@
-# edu-base
-base docker image builder for python education
+# edu-base-raw
+base container image builder for python education
