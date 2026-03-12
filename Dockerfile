@@ -1,5 +1,5 @@
 # begin Dockerfile
-FROM ghcr.io/astral-sh/uv:python3.11-alpine
+FROM ghcr.io/astral-sh/uv:python3.13-alpine
 RUN apk add --no-cache git
 
 RUN adduser runner --uid 1001 --disabled-password
